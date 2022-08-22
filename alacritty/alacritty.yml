@@ -1,0 +1,212 @@
+# Dracula theme for Alacritty
+# https://draculatheme.com/alacritty
+#
+# Color palette
+# https://spec.draculatheme.com
+#
+# Template
+# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
+window:
+  dynamic_padding: true
+  padding:
+    x: 6
+    y: 6
+
+  class:
+    # Application instance name
+    instance: Alacritty
+    # General application class
+    general: Alacritty
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 5000
+
+font:
+  normal:
+    family: Jetbrains Mono
+    style: Regular
+
+  bold:
+    family: Jetbrains Mono
+    style: Bold
+
+  itaclic:
+    family: Jetbrains Mono
+    style: Italic
+
+  bold_italic:
+    family: Jetbrains Mono
+    style: Bold Italic
+
+  size: 16.0
+
+  offset:
+    x: 0
+    y: 1
+
+draw_bold_text_with_bright_colors: true
+background_opacity: 0.8
+
+cursor:
+  style:
+    shape: Underline
+  vi_mode_style:
+    shape: "Underline"
+
+################################
+#  Theme
+################################
+scheme:
+  # --------------------
+  # DoomOne theme
+  # --------------------
+  DoomOne: &DoomOne
+    primary:
+      background: "#282c34"
+      foreground: "#bbc2cf"
+    cursor:
+      text: CellBackground
+      cursor: "#528bff"
+    selection:
+      text: CellForeground
+      background: "#3e4451"
+    normal:
+      black: "#1c1f24"
+      red: "#ff6c6b"
+      green: "#98be65"
+      yellow: "#da8548"
+      blue: "#51afef"
+      magenta: "#c678dd"
+      cyan: "#5699af"
+      white: "#202328"
+    bright:
+      black: "#5b6268"
+      red: "#da8548"
+      green: "#4db5bd"
+      yellow: "#ecbe7b"
+      blue: "#3071db"
+      magenta: "#a9a1e1"
+      cyan: "#46d9ff"
+      white: "#dfdfdf"
+
+  # --------------------
+  # Dracula theme - Modified by Benjamin Nguyen
+  # --------------------
+  Dracula: &Dracula
+    primary:
+      background: "#061115"
+      foreground: "#D9D7D6"
+      bright_foreground: "#ffffff"
+    cursor:
+      text: CellBackground
+      cursor: CellForeground
+    vi_mode_cursor:
+      text: CellBackground
+      cursor: CellForeground
+    search:
+      matches:
+        foreground: "#44475a"
+        background: "#50fa7b"
+      focused_match:
+        foreground: "#44475a"
+        background: "#ffb86c"
+    footer_bar:
+      background: "#282a36"
+      foreground: "#f8f8f2"
+    hints:
+      start:
+        foreground: "#282a36"
+        background: "#f1fa8c"
+      end:
+        foreground: "#f1fa8c"
+        background: "#282a36"
+    line_indicator:
+      foreground: None
+      background: None
+    selection:
+      text: CellForeground
+      background: "#44475a"
+    normal:
+      black: "#21222c"
+      red: "#ff5555"
+      green: "#50fa7b"
+      yellow: "#f1fa8c"
+      blue: "#bd93f9"
+      magenta: "#ff79c6"
+      cyan: "#8be9fd"
+      white: "#f8f8f2"
+    bright:
+      black: "#6272a4"
+      red: "#ff6e6e"
+      green: "#69ff94"
+      yellow: "#ffffa5"
+      blue: "#d6acff"
+      magenta: "#ff92df"
+      cyan: "#a4ffff"
+      white: "#ffffff"
+
+  # --------------------
+  # Unixsea theme
+  # --------------------
+  Unixsea: &Unixsea
+  colors:
+    primary:
+      background: "#061115"
+      foreground: "#D9D7D6"
+    cursor:
+      text: CellForeground
+      cursor: "#d9d7d6"
+    bright:
+      black: "#1C252C"
+      red: "#DF5B61"
+      green: "#78B892"
+      yellow: "#DE8F78"
+      blue: "#6791C9"
+      magenta: "#BC83E3"
+      cyan: "#67AFC1"
+      white: "#D9D7D6"
+    normal:
+      black: "#484e5b"
+      red: "#f16269"
+      green: "#8cd7aa"
+      yellow: "#e9967e"
+      blue: "#79aaeb"
+      magenta: "#c488ec"
+      cyan: "#7acfe4"
+      white: "#e5e5e5"
+
+  # --------------------
+  # GruvboxDark theme
+  # --------------------
+  GruvboxDark: &GruvboxDark
+    primary:
+      # hard contrast: background = '0x1d2021'
+      background: "#282828"
+      # soft contrast: background = '0x32302f'
+      foreground: "#ebdbb2"
+
+    # Normal colors
+    normal:
+      black: "#282828"
+      red: "#cc241d"
+      green: "#98971a"
+      yellow: "#d79921"
+      blue: "#458588"
+      magenta: "#b16286"
+      cyan: "#689d6a"
+      white: "#a89984"
+
+    # Bright colors
+    bright:
+      black: "#928374"
+      red: "#fb4934"
+      green: "#b8bb26"
+      yellow: "#fabd2f"
+      blue: "#83a598"
+      magenta: "#d3869b"
+      cyan: "#8ec07c"
+      white: "#ebdbb2"
+
+colors: *Dracula
