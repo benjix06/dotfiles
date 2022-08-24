@@ -78,7 +78,6 @@ local filemanager       = "pcmanfm"
 local mailclient        = "rambox"
 local mediaplayer       = "vlc"
 local scrlocker         = "slimlock"
--- local terminal          = "x-terminal-emulator"
 local terminal          = "alacritty"
 local virtualmachine    = "virtualbox"
 
